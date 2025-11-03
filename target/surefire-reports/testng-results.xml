@@ -1,57 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-03T12:06:31 IST" name="Surefire suite" finished-at="2025-11-03T12:06:53 IST" duration-ms="21759">
+  <suite started-at="2025-11-03T12:12:40 IST" name="Surefire suite" finished-at="2025-11-03T12:13:03 IST" duration-ms="22488">
     <groups>
       <group name="Regression">
-        <method signature="LoginTests.testValidLogin()[pri:1, instance:LoginTests@2d9d4f9d]" name="testValidLogin" class="LoginTests"/>
-        <method signature="LoginTests.testInvalidLogin()[pri:2, instance:LoginTests@2d9d4f9d]" name="testInvalidLogin" class="LoginTests"/>
-        <method signature="LoginTests.testEmptyCredentialsLogin()[pri:3, instance:LoginTests@2d9d4f9d]" name="testEmptyCredentialsLogin" class="LoginTests"/>
+        <method signature="EmployeeProfileTests.testProfileImageUpload()[pri:1, instance:EmployeeProfileTests@17c1bced]" name="testProfileImageUpload" class="EmployeeProfileTests"/>
+        <method signature="EmployeeProfileTests.testMyInfoPageLoad()[pri:2, instance:EmployeeProfileTests@17c1bced]" name="testMyInfoPageLoad" class="EmployeeProfileTests"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="LoginTests.testValidLogin()[pri:1, instance:LoginTests@2d9d4f9d]" name="testValidLogin" class="LoginTests"/>
+        <method signature="EmployeeProfileTests.testProfileImageUpload()[pri:1, instance:EmployeeProfileTests@17c1bced]" name="testProfileImageUpload" class="EmployeeProfileTests"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-11-03T12:06:31 IST" name="Surefire test" finished-at="2025-11-03T12:06:53 IST" duration-ms="21759">
-      <class name="LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:31 IST" name="setup" finished-at="2025-11-03T12:06:38 IST" duration-ms="6975" status="PASS">
+    <test started-at="2025-11-03T12:12:40 IST" name="Surefire test" finished-at="2025-11-03T12:13:03 IST" duration-ms="22488">
+      <class name="EmployeeProfileTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:40 IST" name="setup" finished-at="2025-11-03T12:12:41 IST" duration-ms="1167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testValidLogin()[pri:1, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:38 IST" name="testValidLogin" description="Verify successful login with valid credentials" finished-at="2025-11-03T12:06:40 IST" duration-ms="2665" status="PASS">
+        <test-method signature="testProfileImageUpload()[pri:1, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:41 IST" name="testProfileImageUpload" description="Navigate to profile page, verify upload option and capture screenshot" finished-at="2025-11-03T12:12:52 IST" duration-ms="10991" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:40 IST" name="teardown" finished-at="2025-11-03T12:06:41 IST" duration-ms="79" status="PASS">
+        </test-method> <!-- testProfileImageUpload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:52 IST" name="teardown" finished-at="2025-11-03T12:12:52 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:41 IST" name="setup" finished-at="2025-11-03T12:06:45 IST" duration-ms="4000" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:52 IST" name="setup" finished-at="2025-11-03T12:12:53 IST" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testInvalidLogin()[pri:2, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:45 IST" name="testInvalidLogin" description="Verify login fails with invalid credentials" finished-at="2025-11-03T12:06:47 IST" duration-ms="2268" status="PASS">
+        <test-method signature="testMyInfoPageLoad()[pri:2, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:53 IST" name="testMyInfoPageLoad" description="Verify My Info page loads correctly" finished-at="2025-11-03T12:13:03 IST" duration-ms="9652" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:47 IST" name="teardown" finished-at="2025-11-03T12:06:47 IST" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:47 IST" name="setup" finished-at="2025-11-03T12:06:51 IST" duration-ms="3943" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testEmptyCredentialsLogin()[pri:3, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:51 IST" name="testEmptyCredentialsLogin" description="Verify login fails with empty credentials" finished-at="2025-11-03T12:06:52 IST" duration-ms="1627" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testEmptyCredentialsLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTests@2d9d4f9d]" started-at="2025-11-03T12:06:52 IST" name="teardown" finished-at="2025-11-03T12:06:53 IST" duration-ms="75" status="PASS">
+        </test-method> <!-- testMyInfoPageLoad -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:13:03 IST" name="teardown" finished-at="2025-11-03T12:13:03 IST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- LoginTests -->
+      </class> <!-- EmployeeProfileTests -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
