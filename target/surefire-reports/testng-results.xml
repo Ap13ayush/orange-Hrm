@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-03T12:12:40 IST" name="Surefire suite" finished-at="2025-11-03T12:13:03 IST" duration-ms="22488">
+  <suite started-at="2025-11-03T12:14:19 IST" name="Surefire suite" finished-at="2025-11-03T12:14:59 IST" duration-ms="39941">
     <groups>
       <group name="Regression">
-        <method signature="EmployeeProfileTests.testProfileImageUpload()[pri:1, instance:EmployeeProfileTests@17c1bced]" name="testProfileImageUpload" class="EmployeeProfileTests"/>
-        <method signature="EmployeeProfileTests.testMyInfoPageLoad()[pri:2, instance:EmployeeProfileTests@17c1bced]" name="testMyInfoPageLoad" class="EmployeeProfileTests"/>
+        <method signature="WindowAndDownloadTests.testMultipleWindowHandling()[pri:1, instance:WindowAndDownloadTests@53ca01a2]" name="testMultipleWindowHandling" class="WindowAndDownloadTests"/>
+        <method signature="WindowAndDownloadTests.testFileDownload()[pri:2, instance:WindowAndDownloadTests@53ca01a2]" name="testFileDownload" class="WindowAndDownloadTests"/>
+        <method signature="WindowAndDownloadTests.testTabSwitching()[pri:3, instance:WindowAndDownloadTests@53ca01a2]" name="testTabSwitching" class="WindowAndDownloadTests"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="EmployeeProfileTests.testProfileImageUpload()[pri:1, instance:EmployeeProfileTests@17c1bced]" name="testProfileImageUpload" class="EmployeeProfileTests"/>
+        <method signature="WindowAndDownloadTests.testMultipleWindowHandling()[pri:1, instance:WindowAndDownloadTests@53ca01a2]" name="testMultipleWindowHandling" class="WindowAndDownloadTests"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-11-03T12:12:40 IST" name="Surefire test" finished-at="2025-11-03T12:13:03 IST" duration-ms="22488">
-      <class name="EmployeeProfileTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:40 IST" name="setup" finished-at="2025-11-03T12:12:41 IST" duration-ms="1167" status="PASS">
+    <test started-at="2025-11-03T12:14:19 IST" name="Surefire test" finished-at="2025-11-03T12:14:59 IST" duration-ms="39941">
+      <class name="WindowAndDownloadTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:19 IST" name="setup" finished-at="2025-11-03T12:14:20 IST" duration-ms="1174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testProfileImageUpload()[pri:1, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:41 IST" name="testProfileImageUpload" description="Navigate to profile page, verify upload option and capture screenshot" finished-at="2025-11-03T12:12:52 IST" duration-ms="10991" status="PASS">
+        <test-method signature="testMultipleWindowHandling()[pri:1, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:20 IST" name="testMultipleWindowHandling" description="Verify handling of multiple browser windows/tabs" finished-at="2025-11-03T12:14:32 IST" duration-ms="11360" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testProfileImageUpload -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:52 IST" name="teardown" finished-at="2025-11-03T12:12:52 IST" duration-ms="87" status="PASS">
+        </test-method> <!-- testMultipleWindowHandling -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:32 IST" name="teardown" finished-at="2025-11-03T12:14:32 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:52 IST" name="setup" finished-at="2025-11-03T12:12:53 IST" duration-ms="478" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:32 IST" name="setup" finished-at="2025-11-03T12:14:32 IST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testMyInfoPageLoad()[pri:2, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:12:53 IST" name="testMyInfoPageLoad" description="Verify My Info page loads correctly" finished-at="2025-11-03T12:13:03 IST" duration-ms="9652" status="PASS">
+        <test-method signature="testFileDownload()[pri:2, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:32 IST" name="testFileDownload" description="Verify file download functionality" finished-at="2025-11-03T12:14:52 IST" duration-ms="19533" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMyInfoPageLoad -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:EmployeeProfileTests@17c1bced]" started-at="2025-11-03T12:13:03 IST" name="teardown" finished-at="2025-11-03T12:13:03 IST" duration-ms="81" status="PASS">
+        </test-method> <!-- testFileDownload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:52 IST" name="teardown" finished-at="2025-11-03T12:14:52 IST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- EmployeeProfileTests -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:52 IST" name="setup" finished-at="2025-11-03T12:14:52 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testTabSwitching()[pri:3, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:52 IST" name="testTabSwitching" description="Verify switching between multiple tabs" finished-at="2025-11-03T12:14:59 IST" duration-ms="6635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTabSwitching -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:59 IST" name="teardown" finished-at="2025-11-03T12:14:59 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- WindowAndDownloadTests -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
