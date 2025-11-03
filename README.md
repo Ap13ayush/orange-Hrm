@@ -215,42 +215,6 @@ Demonstrates advanced Selenium capabilities for handling multiple browser window
 ### Issue: Screenshot directory not found
 **Solution:** The directory is created automatically. Ensure write permissions.
 
-## Dependencies
-
-All dependencies are managed through Maven (`pom.xml`):
-
-```xml
-<dependencies>
-    <!-- Selenium WebDriver -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.15.0</version>
-    </dependency>
-    
-    <!-- TestNG -->
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.8.0</version>
-    </dependency>
-    
-    <!-- WebDriverManager -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.6.2</version>
-    </dependency>
-    
-    <!-- Apache Commons IO -->
-    <dependency>
-        <groupId>commons-io</groupId>
-        <artifactId>commons-io</artifactId>
-        <version>2.15.0</version>
-    </dependency>
-</dependencies>
-```
-
 ## Best Practices Implemented
 
 1. **Page Object Model** - Separation of test logic and page interactions
@@ -261,20 +225,3 @@ All dependencies are managed through Maven (`pom.xml`):
 6. **Meaningful Logging** - Console output for debugging
 7. **Test Organization** - Groups and priorities
 8. **Data-Driven Approach** - Reusable test logic
-
-## Contributing
-
-This is a demonstration project for automated testing capabilities.
-
-## Author
-
-Developed as part of Masai School Web Automation Challenge
-
-## License
-
-This project is for educational purposes.
-
----
-
-**Last Updated:** November 3, 2025  
-**Version:** 1.0.0
