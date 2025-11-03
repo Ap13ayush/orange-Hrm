@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: DataDrivenLoginTests
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 148.1 s -- in DataDrivenLoginTests

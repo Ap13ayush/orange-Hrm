@@ -1,57 +1,419 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-03T12:14:19 IST" name="Surefire suite" finished-at="2025-11-03T12:14:59 IST" duration-ms="39941">
+  <suite started-at="2025-11-03T12:25:44 IST" name="Surefire suite" finished-at="2025-11-03T12:28:12 IST" duration-ms="147775">
     <groups>
       <group name="Regression">
-        <method signature="WindowAndDownloadTests.testMultipleWindowHandling()[pri:1, instance:WindowAndDownloadTests@53ca01a2]" name="testMultipleWindowHandling" class="WindowAndDownloadTests"/>
-        <method signature="WindowAndDownloadTests.testFileDownload()[pri:2, instance:WindowAndDownloadTests@53ca01a2]" name="testFileDownload" class="WindowAndDownloadTests"/>
-        <method signature="WindowAndDownloadTests.testTabSwitching()[pri:3, instance:WindowAndDownloadTests@53ca01a2]" name="testTabSwitching" class="WindowAndDownloadTests"/>
+        <method signature="DataDrivenLoginTests.testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" name="testInvalidLoginWithDataProvider" class="DataDrivenLoginTests"/>
+        <method signature="DataDrivenLoginTests.testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" name="testLoginWithVariousScenarios" class="DataDrivenLoginTests"/>
       </group> <!-- Regression -->
+      <group name="DataDriven">
+        <method signature="DataDrivenLoginTests.testValidLoginWithDataProvider(java.lang.String,java.lang.String)[pri:1, instance:DataDrivenLoginTests@5ad851c9]" name="testValidLoginWithDataProvider" class="DataDrivenLoginTests"/>
+        <method signature="DataDrivenLoginTests.testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" name="testInvalidLoginWithDataProvider" class="DataDrivenLoginTests"/>
+        <method signature="DataDrivenLoginTests.testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" name="testLoginWithVariousScenarios" class="DataDrivenLoginTests"/>
+        <method signature="DataDrivenLoginTests.testLoginWithCaseVariations()[pri:4, instance:DataDrivenLoginTests@5ad851c9]" name="testLoginWithCaseVariations" class="DataDrivenLoginTests"/>
+        <method signature="DataDrivenLoginTests.testLoginWithSpecialCharacters()[pri:5, instance:DataDrivenLoginTests@5ad851c9]" name="testLoginWithSpecialCharacters" class="DataDrivenLoginTests"/>
+      </group> <!-- DataDriven -->
       <group name="Smoke">
-        <method signature="WindowAndDownloadTests.testMultipleWindowHandling()[pri:1, instance:WindowAndDownloadTests@53ca01a2]" name="testMultipleWindowHandling" class="WindowAndDownloadTests"/>
+        <method signature="DataDrivenLoginTests.testValidLoginWithDataProvider(java.lang.String,java.lang.String)[pri:1, instance:DataDrivenLoginTests@5ad851c9]" name="testValidLoginWithDataProvider" class="DataDrivenLoginTests"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2025-11-03T12:14:19 IST" name="Surefire test" finished-at="2025-11-03T12:14:59 IST" duration-ms="39941">
-      <class name="WindowAndDownloadTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:19 IST" name="setup" finished-at="2025-11-03T12:14:20 IST" duration-ms="1174" status="PASS">
+    <test started-at="2025-11-03T12:25:44 IST" name="Surefire test" finished-at="2025-11-03T12:28:12 IST" duration-ms="147775">
+      <class name="DataDrivenLoginTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:44 IST" name="setup" finished-at="2025-11-03T12:25:49 IST" duration-ms="4571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testMultipleWindowHandling()[pri:1, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:20 IST" name="testMultipleWindowHandling" description="Verify handling of multiple browser windows/tabs" finished-at="2025-11-03T12:14:32 IST" duration-ms="11360" status="PASS">
+        <test-method signature="testValidLoginWithDataProvider(java.lang.String,java.lang.String)[pri:1, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:49 IST" name="testValidLoginWithDataProvider" description="Data-driven test for valid login" data-provider="validLoginData" finished-at="2025-11-03T12:25:51 IST" duration-ms="2118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleWindowHandling -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:32 IST" name="teardown" finished-at="2025-11-03T12:14:32 IST" duration-ms="99" status="PASS">
+        </test-method> <!-- testValidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:51 IST" name="teardown" finished-at="2025-11-03T12:25:51 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:32 IST" name="setup" finished-at="2025-11-03T12:14:32 IST" duration-ms="485" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:51 IST" name="setup" finished-at="2025-11-03T12:25:55 IST" duration-ms="3922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testFileDownload()[pri:2, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:32 IST" name="testFileDownload" description="Verify file download functionality" finished-at="2025-11-03T12:14:52 IST" duration-ms="19533" status="PASS">
+        <test-method signature="testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:55 IST" name="testInvalidLoginWithDataProvider" description="Data-driven test for invalid login attempts" data-provider="invalidLoginData" finished-at="2025-11-03T12:25:57 IST" duration-ms="2285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[InvalidPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFileDownload -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:52 IST" name="teardown" finished-at="2025-11-03T12:14:52 IST" duration-ms="86" status="PASS">
+        </test-method> <!-- testInvalidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:57 IST" name="teardown" finished-at="2025-11-03T12:25:58 IST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:52 IST" name="setup" finished-at="2025-11-03T12:14:52 IST" duration-ms="456" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:25:58 IST" name="setup" finished-at="2025-11-03T12:26:01 IST" duration-ms="3903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testTabSwitching()[pri:3, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:52 IST" name="testTabSwitching" description="Verify switching between multiple tabs" finished-at="2025-11-03T12:14:59 IST" duration-ms="6635" status="PASS">
+        <test-method signature="testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:01 IST" name="testInvalidLoginWithDataProvider" description="Data-driven test for invalid login attempts" data-provider="invalidLoginData" finished-at="2025-11-03T12:26:04 IST" duration-ms="2618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTabSwitching -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:WindowAndDownloadTests@53ca01a2]" started-at="2025-11-03T12:14:59 IST" name="teardown" finished-at="2025-11-03T12:14:59 IST" duration-ms="79" status="PASS">
+        </test-method> <!-- testInvalidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:04 IST" name="teardown" finished-at="2025-11-03T12:26:04 IST" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- WindowAndDownloadTests -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:04 IST" name="setup" finished-at="2025-11-03T12:26:08 IST" duration-ms="3974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:08 IST" name="testInvalidLoginWithDataProvider" description="Data-driven test for invalid login attempts" data-provider="invalidLoginData" finished-at="2025-11-03T12:26:20 IST" duration-ms="11944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:20 IST" name="teardown" finished-at="2025-11-03T12:26:20 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:20 IST" name="setup" finished-at="2025-11-03T12:26:24 IST" duration-ms="3980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:24 IST" name="testInvalidLoginWithDataProvider" description="Data-driven test for invalid login attempts" data-provider="invalidLoginData" finished-at="2025-11-03T12:26:36 IST" duration-ms="11972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:36 IST" name="teardown" finished-at="2025-11-03T12:26:36 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:36 IST" name="setup" finished-at="2025-11-03T12:26:40 IST" duration-ms="3907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:40 IST" name="testInvalidLoginWithDataProvider" description="Data-driven test for invalid login attempts" data-provider="invalidLoginData" finished-at="2025-11-03T12:26:52 IST" duration-ms="11987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:52 IST" name="teardown" finished-at="2025-11-03T12:26:52 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:52 IST" name="setup" finished-at="2025-11-03T12:26:56 IST" duration-ms="3961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidLoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:56 IST" name="testInvalidLoginWithDataProvider" description="Data-driven test for invalid login attempts" data-provider="invalidLoginData" finished-at="2025-11-03T12:26:59 IST" duration-ms="2573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginWithDataProvider -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:59 IST" name="teardown" finished-at="2025-11-03T12:26:59 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:26:59 IST" name="setup" finished-at="2025-11-03T12:27:03 IST" duration-ms="4007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:03 IST" name="testLoginWithVariousScenarios" description="Comprehensive data-driven login validation" data-provider="allLoginData" finished-at="2025-11-03T12:27:06 IST" duration-ms="3246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[success]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithVariousScenarios -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:06 IST" name="teardown" finished-at="2025-11-03T12:27:06 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:06 IST" name="setup" finished-at="2025-11-03T12:27:10 IST" duration-ms="3913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:10 IST" name="testLoginWithVariousScenarios" description="Comprehensive data-driven login validation" data-provider="allLoginData" finished-at="2025-11-03T12:27:13 IST" duration-ms="2749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InvalidUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[InvalidPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[failure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Both invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithVariousScenarios -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:13 IST" name="teardown" finished-at="2025-11-03T12:27:13 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:13 IST" name="setup" finished-at="2025-11-03T12:27:17 IST" duration-ms="3897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:17 IST" name="testLoginWithVariousScenarios" description="Comprehensive data-driven login validation" data-provider="allLoginData" finished-at="2025-11-03T12:27:19 IST" duration-ms="2733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[failure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithVariousScenarios -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:19 IST" name="teardown" finished-at="2025-11-03T12:27:19 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:19 IST" name="setup" finished-at="2025-11-03T12:27:23 IST" duration-ms="4008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:23 IST" name="testLoginWithVariousScenarios" description="Comprehensive data-driven login validation" data-provider="allLoginData" finished-at="2025-11-03T12:27:26 IST" duration-ms="2736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[failure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Invalid username]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithVariousScenarios -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:26 IST" name="teardown" finished-at="2025-11-03T12:27:26 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:26 IST" name="setup" finished-at="2025-11-03T12:27:30 IST" duration-ms="3754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithVariousScenarios(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:30 IST" name="testLoginWithVariousScenarios" description="Comprehensive data-driven login validation" data-provider="allLoginData" finished-at="2025-11-03T12:27:33 IST" duration-ms="2637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[failure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Empty credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithVariousScenarios -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:33 IST" name="teardown" finished-at="2025-11-03T12:27:33 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:33 IST" name="setup" finished-at="2025-11-03T12:27:37 IST" duration-ms="3943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithCaseVariations()[pri:4, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:37 IST" name="testLoginWithCaseVariations" description="Test login with username case variations" finished-at="2025-11-03T12:27:59 IST" duration-ms="22097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithCaseVariations -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:59 IST" name="teardown" finished-at="2025-11-03T12:27:59 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:27:59 IST" name="setup" finished-at="2025-11-03T12:28:03 IST" duration-ms="4054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginWithSpecialCharacters()[pri:5, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:28:03 IST" name="testLoginWithSpecialCharacters" description="Test login with special characters in credentials" finished-at="2025-11-03T12:28:12 IST" duration-ms="9185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithSpecialCharacters -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:DataDrivenLoginTests@5ad851c9]" started-at="2025-11-03T12:28:12 IST" name="teardown" finished-at="2025-11-03T12:28:12 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- DataDrivenLoginTests -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

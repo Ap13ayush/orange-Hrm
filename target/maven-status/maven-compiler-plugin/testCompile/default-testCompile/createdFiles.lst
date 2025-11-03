@@ -1,3 +1,4 @@
 EmployeeProfileTests.class
-WindowAndDownloadTests.class
 LoginTests.class
+DataDrivenLoginTests.class
+WindowAndDownloadTests.class
